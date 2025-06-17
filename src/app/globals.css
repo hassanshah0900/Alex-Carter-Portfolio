@@ -3,4 +3,16 @@
 @theme {
   --font-poppins: var(--poppins);
   --font-preahvihear: var(--preahvihear);
+
+  --color-background: #11071f;
+  --color-foreground: #ffffff;
+  --color-navbar-background: #1a0b2e;
+  --color-navbar-foreground: #ffffff;
+  --color-accent: #a362ff;
+  --color-border: #693b93;
+  --color-btn-background: #2c1250;
+}
+
+html {
+  scroll-behavior: smooth;
 }

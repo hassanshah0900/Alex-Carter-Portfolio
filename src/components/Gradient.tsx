@@ -1,0 +1,31 @@
+import { twMerge } from "tailwind-merge";
+
+interface Props {
+  className: string;
+  color?: "white" | "purple";
+  type?: "light" | "dark";
+}
+
+export default function Gradient({
+  className,
+  type = "light",
+  color = "white",
+}: Props) {
+  return (
+    <div
+      className={twMerge(
+        `bg-radial absolute  top-1/2 left-1/2 -translate-1/2 rounded-full -z-10 ${
+          color === "purple" ? "from-purple-600" : "from-white"
+        } from-0% to-transparent to-70% `,
+        type === "light"
+          ? `${
+              color === "purple" ? "via-purple-600/30" : "via-white/30"
+            } via-20%`
+          : `${
+              color === "purple" ? "via-purple-600/40" : "via-white/40"
+            } via-30%`,
+        className
+      )}
+    />
+  );
+}

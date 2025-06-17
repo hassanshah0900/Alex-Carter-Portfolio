@@ -1,9 +1,11 @@
 import React, { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface Props extends ComponentProps<"button"> {}
-
-export default function Button({ className, children, ...props }: Props) {
+export default function Button({
+  className,
+  children,
+  ...props
+}: ComponentProps<"button">) {
   return (
     <button
       {...props}

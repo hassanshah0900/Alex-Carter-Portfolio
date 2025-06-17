@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Preahvihear } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Container from "@/components/Container";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${preahvihear.variable}`}>
-      <body className="font-preahvihear">{children}</body>
+      <body className="font-preahvihear bg-background text-foreground text-base">
+        <Navbar />
+        <main>
+          <Container>{children}</Container>
+        </main>
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.png";
-import arrowVector from "../../../public/arrow-vector.svg";
+import arrowVector from "../../../public/svgs/arrow-vector.svg";
 import Gradient from "../Gradient";
 import { twMerge } from "tailwind-merge";
 

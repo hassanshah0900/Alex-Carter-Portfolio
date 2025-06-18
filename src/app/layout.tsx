@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${preahvihear.variable}`}>
-      <body className="font-preahvihear bg-background text-foreground text-base">
+      <body className="font-preahvihear bg-background text-foreground text-sm sm:text-base overflow-x-hidden">
         <Navbar />
         <main>
           <Container>{children}</Container>

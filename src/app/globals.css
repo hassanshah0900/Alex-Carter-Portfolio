@@ -11,6 +11,8 @@
   --color-accent: #a362ff;
   --color-border: #693b93;
   --color-btn-background: #2c1250;
+  --breakpoint-xs: 22rem;
+  --text-2xs: 0.625rem;
 }
 
 html {

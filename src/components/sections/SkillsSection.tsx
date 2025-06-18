@@ -5,17 +5,27 @@ import AvatarPack, { AvatarData } from "../AvatarPack";
 import { twMerge } from "tailwind-merge";
 
 const supporters: AvatarData[] = [
-  { id: 1, url: "/svgs/adobe-photoshop.svg", weight: 1 },
-  { id: 2, url: "/svgs/blender.svg", weight: 1 },
-  { id: 3, url: "/svgs/canva.svg", weight: 1 },
-  { id: 4, url: "/svgs/figma.svg", weight: 2 },
-  { id: 5, url: "/svgs/inkscape.svg", weight: 1 },
-  { id: 6, url: "/svgs/notion.svg", weight: 2 },
-  { id: 7, url: "/svgs/sketch.svg", weight: 1 },
-  { id: 8, url: "/svgs/trello.svg", weight: 1 },
-  { id: 9, url: "/svgs/dropbox.svg", weight: 1 },
-  { id: 10, url: "/svgs/slack.svg", weight: 1 },
-  { id: 11, url: "/svgs/google-drive.svg", weight: 2 },
+  {
+    alt: "Logo of Adobe Photoshop",
+    id: 1,
+    url: "/svgs/adobe-photoshop.svg",
+    weight: 1,
+  },
+  { alt: "Logo of Blender", id: 2, url: "/svgs/blender.svg", weight: 1 },
+  { alt: "Logo of Canva", id: 3, url: "/svgs/canva.svg", weight: 1 },
+  { alt: "Logo of Figma", id: 4, url: "/svgs/figma.svg", weight: 2 },
+  { alt: "Logo of Inkscape", id: 5, url: "/svgs/inkscape.svg", weight: 1 },
+  { alt: "Logo of Notion", id: 6, url: "/svgs/notion.svg", weight: 2 },
+  { alt: "Logo of Sketch", id: 7, url: "/svgs/sketch.svg", weight: 1 },
+  { alt: "Logo of Trello", id: 8, url: "/svgs/trello.svg", weight: 1 },
+  { alt: "Logo of Dropbox", id: 9, url: "/svgs/dropbox.svg", weight: 1 },
+  { alt: "Logo of Slack", id: 10, url: "/svgs/slack.svg", weight: 1 },
+  {
+    alt: "Logo of Google Drive",
+    id: 11,
+    url: "/svgs/google-drive.svg",
+    weight: 2,
+  },
 ];
 
 export default function SkillsSection({ className }: { className?: string }) {

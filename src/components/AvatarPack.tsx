@@ -7,6 +7,7 @@ export interface AvatarData {
   id: string | number;
   url: string;
   weight: number; // relative “size” for packing, e.g. contribution count
+  alt: string;
 }
 
 interface Props {
@@ -52,7 +53,7 @@ export default function AvatarPack({
               unoptimized
               width={50}
               height={50}
-              alt=""
+              alt={node.data.alt}
               className="absolute object-cover"
               style={{
                 width: r * 2,

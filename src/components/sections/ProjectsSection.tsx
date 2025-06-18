@@ -1,9 +1,9 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
-import Project from "../Project";
-import Button from "../Button";
+import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import Button from "../Button";
+import Project from "../Project";
 
 const projects = [
   {
@@ -45,7 +45,10 @@ export default function ProjectsSection({ className }: { className?: string }) {
   return (
     <section
       ref={ref}
-      className={twMerge("space-y-40 relative", className)}
+      className={twMerge(
+        "space-y-20 xs:space-y-28 sm:space-y-40 relative",
+        className
+      )}
       id="projects"
     >
       {filteredProjects.map((project) => (
@@ -61,7 +64,7 @@ export default function ProjectsSection({ className }: { className?: string }) {
         onClick={(e) => {
           setShowingAll(!isShowingAll);
         }}
-        className={`bottom-5 left-1/2 -translate-x-1/2 z-50 ${
+        className={`bottom-5 left-1/2 -translate-x-1/2 z-40 ${
           isShowingAll ? "sticky " : "absolute"
         }`}
       >

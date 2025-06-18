@@ -1,47 +1,36 @@
 import Image from "next/image";
-import logo from "../../public/logo.png";
 import NextLink from "next/link";
+import logo from "../../public/logo.png";
 import Container from "./Container";
 import Link from "./Link";
+import Sidebar from "./Sidebar";
+
+export const navLinks = [
+  { id: 1, name: "Bio", url: "/#bio" },
+  { id: 2, name: "Skills", url: "/#skills" },
+  { id: 3, name: "Projects", url: "/#projects" },
+  { id: 4, name: "Contact", url: "/#contact" },
+];
 
 export default function Navbar() {
   return (
     <div className="bg-navbar-background w-full">
-      <Container className="py-5 flex justify-between">
+      <Container className="py-3 sm:py-5 flex justify-between">
         <NextLink className="w-10" href="/">
-          <Image src={logo} alt="" />
+          <Image src={logo} alt="Alex Carter's portfolio website's logo" />
         </NextLink>
-        <nav className="w-1/3">
-          <ul className="text-navbar-foreground h-full font-poppins flex justify-between items-center gap-5 w-full">
-            <li>
-              <Link href="/#bio">Bio</Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-accent transition-colors"
-                href="/#skills"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-accent transition-colors"
-                href="/#projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-accent transition-colors"
-                href="/#contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="flex justify-center items-center">
+          <nav className="hidden sm:block">
+            <ul className="text-navbar-foreground h-full font-poppins flex justify-between items-center gap-5 w-full">
+              {navLinks.map((navlink) => (
+                <li key={navlink.id}>
+                  <Link href={navlink.url}>{navlink.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <Sidebar />
+        </div>
       </Container>
     </div>
   );

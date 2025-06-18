@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import AvatarPack, { AvatarData } from "../AvatarPack";
 import { twMerge } from "tailwind-merge";
 
@@ -17,10 +19,19 @@ const supporters: AvatarData[] = [
 ];
 
 export default function SkillsSection({ className }: { className?: string }) {
+  const [viewportSize, setViewportSize] = useState(0);
+
+  useEffect(() => {
+    setViewportSize(window.innerWidth);
+  }, []);
+
   return (
     <section className={twMerge(className)} id="skills">
       <div className="flex justify-center items-center pt-24">
-        <AvatarPack data={supporters} diameter={400}></AvatarPack>
+        <AvatarPack
+          data={supporters}
+          diameter={viewportSize > 640 ? 400 : viewportSize > 400 ? 300 : 250}
+        ></AvatarPack>
       </div>
     </section>
   );

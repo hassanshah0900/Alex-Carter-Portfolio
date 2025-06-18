@@ -10,31 +10,46 @@ const projects = [
     id: 1,
     title: "Delicious Donuts",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
-    imgUrl: "/donut.png",
+    img: {
+      url: "/donut.png",
+      alt: "Logo design for Delicious Donuts featuring a pink frosted donut with sprinkles",
+    },
   },
   {
     id: 2,
     title: "Naturea",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
-    imgUrl: "/naturea.png",
+    img: {
+      url: "/naturea.png",
+      alt: "Logo design for Naturea featuring a green leaf icon symbolizing nature and sustainability",
+    },
   },
   {
     id: 3,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
-    imgUrl: "/digital-marketing.png",
+    img: {
+      url: "/digital-marketing.png",
+      alt: "Digital marketing poster design with bold typography and abstract orange shapes",
+    },
   },
   {
     id: 4,
     title: "Donut",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
-    imgUrl: "/donut.png",
+    img: {
+      url: "/donut.png",
+      alt: "Logo design for Delicious Donuts featuring a pink frosted donut with sprinkles",
+    },
   },
   {
     id: 5,
     title: "Naturea",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
-    imgUrl: "/naturea.png",
+    img: {
+      url: "/naturea.png",
+      alt: "Logo design for Naturea featuring a green leaf icon symbolizing nature and sustainability",
+    },
   },
 ];
 
@@ -56,7 +71,7 @@ export default function ProjectsSection({ className }: { className?: string }) {
           key={project.id}
           title={project.title}
           description={project.desc}
-          imgUrl={project.imgUrl}
+          img={project.img}
           alignment={project.id % 2 === 0 ? "right" : "left"}
         />
       ))}

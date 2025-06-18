@@ -5,14 +5,14 @@ import Gradient from "./Gradient";
 interface Props {
   title: string;
   description: string;
-  imgUrl: string;
+  img: { url: string; alt: string };
   alignment?: "left" | "right";
 }
 
 export default function Project({
   title,
   description,
-  imgUrl,
+  img,
   alignment = "left",
 }: Props) {
   return (
@@ -42,14 +42,15 @@ export default function Project({
         <Gradient className="w-full" color="purple" />
         <div className="relative w-full h-full">
           <Image
-            src={imgUrl}
+            src={img.url}
+            sizes={`(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 500px`}
             fill
             className={`object-cover object-center rounded-lg translate-x-2 translate-y-2 ${
               alignment === "left"
                 ? "sm:translate-x-4 sm:translate-y-4"
                 : "sm:-translate-x-4 sm:translate-y-4"
             }`}
-            alt=""
+            alt={img.alt}
           />
         </div>
       </div>

@@ -62,6 +62,7 @@ function Avatar() {
         <Image
           className="w-32 sm:w-60 px-5 sm:px-10"
           src={avatar}
+          sizes="(max-width: 1000px) 25vw, 250px"
           alt="It is avatar image of Alex Carter with Apple laptop in front and avatar is facing you."
         />
       </div>

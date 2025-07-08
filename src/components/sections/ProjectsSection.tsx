@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "Delicious Donuts",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
+    desc: "Designed to capture the playful spirit of a modern donut brand, this logo uses bold colors, clean lines, and a sprinkle-filled icon to evoke warmth and craveability. The rounded typography complements the donut shape, reinforcing the brand’s fun and friendly identity.",
     img: {
       url: "/donut.png",
       alt: "Logo design for Delicious Donuts featuring a pink frosted donut with sprinkles",
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 2,
     title: "Naturea",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
+    desc: "This clean and minimal logo was made for a brand that promotes eco-friendly products or nature-based services. The soft green tones and leaf symbol reflect freshness, growth, and a deep connection with nature.",
     img: {
       url: "/naturea.png",
       alt: "Logo design for Naturea featuring a green leaf icon symbolizing nature and sustainability",
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "Digital Marketing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
+    desc: "This bold and modern design highlights the dynamic nature of digital marketing. The warm colors and abstract shapes create energy and movement, reflecting creativity and innovation in the online space.",
     img: {
       url: "/digital-marketing.png",
       alt: "Digital marketing poster design with bold typography and abstract orange shapes",
@@ -35,19 +35,19 @@ const projects = [
   },
   {
     id: 4,
-    title: "Donut",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
+    title: "Eco Cafe",
+    desc: "This eco-friendly café logo combines a coffee cup with a leaf to reflect sustainability and freshness. The green tones and minimalist style give it a clean, natural feel—perfect for a brand focused on organic or environmentally conscious offerings.",
     img: {
-      url: "/donut.png",
+      url: "/eco-cafe.png",
       alt: "Logo design for Delicious Donuts featuring a pink frosted donut with sprinkles",
     },
   },
   {
     id: 5,
-    title: "Naturea",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum velitnam officiis totam laboriosam ipsa soluta perspiciatis consequatur vitae alias corporis, cupiditate voluptatem voluptas sunt. Debitis temporibus excepturi atque!",
+    title: "Fit Body",
+    desc: "This bold and modern logo was designed for a fitness brand focused on strength and movement. The dumbbell icon and strong typography reflect energy, discipline, and a commitment to a healthy lifestyle.",
     img: {
-      url: "/naturea.png",
+      url: "/fit-body.png",
       alt: "Logo design for Naturea featuring a green leaf icon symbolizing nature and sustainability",
     },
   },

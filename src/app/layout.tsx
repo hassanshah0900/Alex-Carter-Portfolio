@@ -3,6 +3,7 @@ import { Poppins, Preahvihear } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${preahvihear.variable}`}>
+      <head>
+        <Script id="mcjs">
+          {`!(function (c, h, i, m, p) {
+              (m = c.createElement(h)),
+                (p = c.getElementsByTagName(h)[0]),
+                (m.async = 1),
+                (m.src = i),
+                p.parentNode.insertBefore(m, p);
+            })(
+              document,
+              "script",
+              "https://chimpstatic.com/mcjs-connected/js/users/9d8f8e48318f8e22f255d336d/223016986398ac1b7da23757f.js"
+            );`}
+        </Script>
+      </head>
       <body className="font-preahvihear bg-background text-foreground text-sm sm:text-base overflow-x-hidden">
         <Navbar />
         <main>
